@@ -263,7 +263,7 @@ a
 
 .portfolio__container 
     @include container()
-    background-color: #1b54a2
+    // background-color: #1b54a2
     border-radius: 16px
     padding: 0
     margin: 0 auto
@@ -272,19 +272,28 @@ a
     flex-wrap: wrap
 
 .portfolio__item
-    flex: 0 0 50%
+    flex: 0 0 33.333%
+    // height: 100%
+    // position: relative
 
 .portfolio__item-full
     flex: 0 0 100%
 
 .portfolio__item-img 
-    max-width: 100%
     display: block
+    max-width: 100%
+    height: calc((100vw - 30px) * 9 / 16 / 3)
+    max-height: 225px
+    object-fit: cover
     transition: opacity 0.5s
 
 .portfolio__item-a 
     display: block
     position: relative
+    // top: 0
+    // bottom: 0
+    // left: 0
+    // right: 0
 
 .portfolio__item-desc
     position: absolute
