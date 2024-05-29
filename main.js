@@ -11,3 +11,6 @@ window.addEventListener("scroll", function() {
         document.querySelector(".header").classList.remove("header__scroll");
     }
 });
+
+const currentYear = new Date();
+document.querySelector(".footer__container").insertAdjacentText("beforeend", currentYear.getFullYear());
