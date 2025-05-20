@@ -536,4 +536,8 @@ a {
   .portfolio__item {
     flex: 0 0 100%;
   }
+  .portfolio__item-img {
+    height: calc((100vw - 30px) * 9 / 16);
+    max-height: unset;
+  }
 }/*# sourceMappingURL=style.css.map */
