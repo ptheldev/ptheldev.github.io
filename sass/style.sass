@@ -234,7 +234,7 @@ a
 .skills__skill-box
     flex: 0 0 16.6%
     margin-bottom: 30px
-    padding: 0 15px
+    padding: 0 0px
 
 .skills__levels
     padding: 0
@@ -484,3 +484,19 @@ a
     .portfolio__item-img
         height: calc((100vw - 30px) * 9 / 16)
         max-height: unset
+
+@media screen and (max-width: 800px) 
+    .skills__skill-box
+        flex: 0 0 20%
+
+@media screen and (max-width: 700px) 
+    .skills__skill-box
+        flex: 0 0 25%
+
+@media screen and (max-width: 560px) 
+    .skills__skill-box
+        flex: 0 0 33.333%
+
+@media screen and (max-width: 420px) 
+    .skills__skill-box
+        flex: 0 0 50%
